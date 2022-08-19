@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+/* default styles reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* default styles reset */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 80px;
+    background-color: whitesmoke;
+}
+
+#logo-image {
+    height: 100px;
+    width: 150px;
+}
+
+.navigation-bar {
+    display: flex;
+    gap: 50px;
+    margin-right: 100px;
+}
+
+
+
+.header-buttons {
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.header-buttons:hover {
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    background-color: black;    
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+}
+
+.titles {
+    font-family: 'Silkscreen', cursive;
+    font-size: 15px;
+    width: 500px;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 100px;
+}
+
+#sidebar-h1 {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+
+.sidebar-button {
+    color: white;
+    height: 40px;
+    width: 90px;
+    border-radius: 7px;
+    background-color: rgb(22, 73, 150);
+    transition: width 0.5s, height 0.5s, font 0.5s;
+}
+
+.sidebar-button:hover {
+    font-size: 16px;
+    height: 45px;
+    width: 95px;
+}
+
+.sidebar-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 100px;
+}
+
+.sidebar-img div {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1.5s;
+}
+
+.sidebar-img .front {
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.sidebar-img .back {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.sidebar-img:hover .front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.sidebar-img:hover .back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+main {
+    display: flex;
+    height: 1080px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-image: url(./main-wallpaper.jpg);
+}
+
+.icons {
+    display: flex;
+    gap: 35px;
+}
+
+.main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+}
+
+.icons-img {
+    height: 200px;
+    width: 200px;
+}
+
+.main-title {
+    font-family: 'Silkscreen', cursive;
+    font-size: 50px;
+    color: black;
+}
+
+.main-title:hover {
+    color: red;
+    transition: 1s;
+}
+
+p {
+    font-family: 'Silkscreen', cursive;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.titles-icons {
+    font-family: 'Silkscreen', cursive;
+    font-size: 18px;
+    color: red;
+}
+
+.icon-1 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #eee;
+    background-color: #ffffffB3;
+    box-shadow: 0px 20px 20px black;
+    padding: 20px;
+}
+
+.icon-2 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #eee;
+    background-color: #ffffffB3;
+    box-shadow: 0px 20px 20px black;
+    padding: 20px;
+}
+
+.icon-3 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #eee;
+    background-color: #ffffffB3;
+    box-shadow: 0px 20px 20px black;
+    padding: 20px;
+}
+
+.icon-4 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #eee;
+    background-color: #ffffffB3;
+    box-shadow: 0px 20px 20px black;
+    padding: 20px;
+}
